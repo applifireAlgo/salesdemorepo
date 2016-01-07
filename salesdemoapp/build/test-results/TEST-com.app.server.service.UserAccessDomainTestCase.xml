@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.UserAccessDomainTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-07T10:56:07" hostname="4752563c5d1f" time="0.506">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.UserAccessDomainTestCase" time="0.272"/>
+  <testcase name="test2Update" classname="com.app.server.service.UserAccessDomainTestCase" time="0.133"/>
+  <testcase name="test3FindById" classname="com.app.server.service.UserAccessDomainTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="com.app.server.service.UserAccessDomainTestCase" time="0.093"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:07.165--ClientSession(2903921)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [FA80A92B-6938-4946-809F-8C2EABB8EBC7, VVYMapsyidISkuWLyrUuYjRoupdVZOgtkcZgOY4vvb8QUTRMtq, 6GoSj7hYO31CNzYIWQR8o8KXyHst4T9rbzBveb2Rvwbyh8F7qG, GVZ9Js1dCG5wi3jWvcFvwKpAWOoCvNSGfG2zEcFU5D8bZBHW8S, 4b2Rn5iwqVjSkT0zBjyoWy2J3TR78Vf7agOlO1rC3KMEuTi4Bi, 22402, 1, AAAAA, 2016-01-07 16:26:07.126, null, 2016-01-07 16:26:07.126, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:07.388--ClientSession(1985564371)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind => [1, FA80A92B-6938-4946-809F-8C2EABB8EBC7]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:07.391--ClientSession(1631688678)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [FA80A92B-6938-4946-809F-8C2EABB8EBC7]
+[EL Fine]: sql: 2016-01-07 10:56:07.393--ClientSession(1631688678)--Connection(321035985)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccessDomain_M SET domainDescription = ?, domainHelp = ?, domainIcon = ?, domainName = ?, userAccessDomain = ?, updatedBy = ?, versionId = ? WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [GfdDx9AiUcp8sXAfP8lzeSaDYVflqlRi0FKhOtX0iDUPWRu1WU, q58BCj5PAU2EXo6nLD0qKNQOxOZbrJRcJuBxTAYYOdYOYAJc5L, Hj3EhoXhrVr0ivPZvR2fcQbrWK0ImShhfCpJN2Ht1fGOC08rVH, KL4ZQcfo1eDYcm3vkXXEwW1U1iY2PDeZJgUixrsGnXFLVIkq7d, 29829, AAAAA, 2, FA80A92B-6938-4946-809F-8C2EABB8EBC7, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:07.521--ClientSession(654476048)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE ((activeStatus = ?) AND (userAccessDomainId = ?))
+	bind => [1, FA80A92B-6938-4946-809F-8C2EABB8EBC7]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:07.527--ClientSession(1607548611)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind => [FA80A92B-6938-4946-809F-8C2EABB8EBC7]
+[EL Fine]: sql: 2016-01-07 10:56:07.529--ClientSession(1607548611)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind => [FA80A92B-6938-4946-809F-8C2EABB8EBC7, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

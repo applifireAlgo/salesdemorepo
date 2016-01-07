@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.MaterialTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.MaterialTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; MaterialTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">5</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.778s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.453s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.067s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.009s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findBybrandcode</td>
+<td>0.007s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.242s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:58.963--ClientSession(2105465609)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [72C4370B-72E2-41BF-A6D0-9D7FAC809A2A, DlCIBcIZd4osj0DhO8vQjshDZZYhV9vUJErC9feCbYJznP9Zqu, 1, AAAAA, 2016-01-07 16:25:58.961, null, 2016-01-07 16:25:58.961, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.226--ClientSession(1731502767)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Brand_M (brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [045A67C4-9204-42A7-B6D2-63C466FD52AE, F5ypK5NzouDmgLGqGjhDiDtF8e9pu98t6K1thAhhtOPb8BlHzD, 72C4370B-72E2-41BF-A6D0-9D7FAC809A2A, 1, AAAAA, 2016-01-07 16:25:58.961, null, 2016-01-07 16:25:58.961, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.361--ClientSession(242518670)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Material_M (materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [24A293DC-68A8-435E-AD0B-7A416335F0DB, 045A67C4-9204-42A7-B6D2-63C466FD52AE, WeYtbBmQibSCf01PoOVX0Q28zxGslaSpHn8gMj6RUzo3Sqiiik, 1, AAAAA, 2016-01-07 16:25:59.329, null, 2016-01-07 16:25:59.329, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.408--ClientSession(1892662839)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind =&gt; [1, 24A293DC-68A8-435E-AD0B-7A416335F0DB]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.41--ClientSession(1418917147)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind =&gt; [24A293DC-68A8-435E-AD0B-7A416335F0DB]
+[EL Fine]: sql: 2016-01-07 10:55:59.412--ClientSession(1418917147)--Connection(321035985)--Thread(Thread[Test worker,5,main])--UPDATE ast_Material_M SET materialdesc = ?, updatedBy = ?, versionId = ? WHERE ((materialcode = ?) AND (versionId = ?))
+	bind =&gt; [yirVjWcZ849f2UvOSVke067wBXkTNOhQcnUQZNFJzDHXJDcnrc, AAAAA, 2, 24A293DC-68A8-435E-AD0B-7A416335F0DB, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.477--ClientSession(610494953)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind =&gt; [1, 24A293DC-68A8-435E-AD0B-7A416335F0DB]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.484--ClientSession(1930539928)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (brandcode = ?))
+	bind =&gt; [1, 045A67C4-9204-42A7-B6D2-63C466FD52AE]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.494--ClientSession(975518563)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind =&gt; [24A293DC-68A8-435E-AD0B-7A416335F0DB]
+[EL Fine]: sql: 2016-01-07 10:55:59.496--ClientSession(975518563)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Material_M WHERE ((materialcode = ?) AND (versionId = ?))
+	bind =&gt; [24A293DC-68A8-435E-AD0B-7A416335F0DB, 2]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.544--ClientSession(735153356)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandcode = ?)
+	bind =&gt; [045A67C4-9204-42A7-B6D2-63C466FD52AE]
+[EL Fine]: sql: 2016-01-07 10:55:59.546--ClientSession(735153356)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Brand_M WHERE ((brandcode = ?) AND (versionId = ?))
+	bind =&gt; [045A67C4-9204-42A7-B6D2-63C466FD52AE, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.633--ClientSession(187048957)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind =&gt; [72C4370B-72E2-41BF-A6D0-9D7FAC809A2A]
+[EL Fine]: sql: 2016-01-07 10:55:59.634--ClientSession(187048957)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind =&gt; [72C4370B-72E2-41BF-A6D0-9D7FAC809A2A, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 7, 2016 10:56:28 AM</p>
+</div>
+</div>
+</body>
+</html>

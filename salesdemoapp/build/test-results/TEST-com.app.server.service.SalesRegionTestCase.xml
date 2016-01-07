@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.SalesRegionTestCase" tests="4" skipped="0" failures="0" errors="0" timestamp="2016-01-07T10:56:02" hostname="4752563c5d1f" time="0.506">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.SalesRegionTestCase" time="0.181"/>
+  <testcase name="test2Update" classname="com.app.server.service.SalesRegionTestCase" time="0.083"/>
+  <testcase name="test3FindById" classname="com.app.server.service.SalesRegionTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="com.app.server.service.SalesRegionTestCase" time="0.235"/>
+  <system-out><![CDATA[Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:02.434--ClientSession(419423044)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SalesRegion_M (regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [116C8730-84FC-47D9-8F66-DC11BD5FE969, 2STrX3nk90ktQ1827cl1Ranm7CQP2O4TZXMIxX9bImHb3RNKOO, 1, AAAAA, 2016-01-07 16:26:02.41, null, 2016-01-07 16:26:02.41, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:02.587--ClientSession(1490264064)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE ((activeStatus = ?) AND (regioncode = ?))
+	bind => [1, 116C8730-84FC-47D9-8F66-DC11BD5FE969]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:02.589--ClientSession(1094226577)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind => [116C8730-84FC-47D9-8F66-DC11BD5FE969]
+[EL Fine]: sql: 2016-01-07 10:56:02.59--ClientSession(1094226577)--Connection(321035985)--Thread(Thread[Test worker,5,main])--UPDATE ast_SalesRegion_M SET regionname = ?, updatedBy = ?, versionId = ? WHERE ((regioncode = ?) AND (versionId = ?))
+	bind => [Mg4fxueYhkPakKie6IwdsUMjmwI5E0gwlNKxqDpJiEA7gmUdaZ, AAAAA, 2, 116C8730-84FC-47D9-8F66-DC11BD5FE969, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:02.67--ClientSession(201339715)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE ((activeStatus = ?) AND (regioncode = ?))
+	bind => [1, 116C8730-84FC-47D9-8F66-DC11BD5FE969]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:02.675--ClientSession(2064032505)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind => [116C8730-84FC-47D9-8F66-DC11BD5FE969]
+[EL Fine]: sql: 2016-01-07 10:56:02.676--ClientSession(2064032505)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SalesRegion_M WHERE ((regioncode = ?) AND (versionId = ?))
+	bind => [116C8730-84FC-47D9-8F66-DC11BD5FE969, 2]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

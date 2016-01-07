@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.app.server.service.MaterialTestCase" tests="5" skipped="0" failures="0" errors="0" timestamp="2016-01-07T10:55:58" hostname="4752563c5d1f" time="0.778">
+  <properties/>
+  <testcase name="test1Save" classname="com.app.server.service.MaterialTestCase" time="0.453"/>
+  <testcase name="test2Update" classname="com.app.server.service.MaterialTestCase" time="0.067"/>
+  <testcase name="test3FindById" classname="com.app.server.service.MaterialTestCase" time="0.009"/>
+  <testcase name="test3findBybrandcode" classname="com.app.server.service.MaterialTestCase" time="0.007"/>
+  <testcase name="test4Delete" classname="com.app.server.service.MaterialTestCase" time="0.242"/>
+  <system-out><![CDATA[In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:58.963--ClientSession(2105465609)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Category_M (categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [72C4370B-72E2-41BF-A6D0-9D7FAC809A2A, DlCIBcIZd4osj0DhO8vQjshDZZYhV9vUJErC9feCbYJznP9Zqu, 1, AAAAA, 2016-01-07 16:25:58.961, null, 2016-01-07 16:25:58.961, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.226--ClientSession(1731502767)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Brand_M (brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [045A67C4-9204-42A7-B6D2-63C466FD52AE, F5ypK5NzouDmgLGqGjhDiDtF8e9pu98t6K1thAhhtOPb8BlHzD, 72C4370B-72E2-41BF-A6D0-9D7FAC809A2A, 1, AAAAA, 2016-01-07 16:25:58.961, null, 2016-01-07 16:25:58.961, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.361--ClientSession(242518670)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_Material_M (materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind => [24A293DC-68A8-435E-AD0B-7A416335F0DB, 045A67C4-9204-42A7-B6D2-63C466FD52AE, WeYtbBmQibSCf01PoOVX0Q28zxGslaSpHn8gMj6RUzo3Sqiiik, 1, AAAAA, 2016-01-07 16:25:59.329, null, 2016-01-07 16:25:59.329, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.408--ClientSession(1892662839)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind => [1, 24A293DC-68A8-435E-AD0B-7A416335F0DB]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.41--ClientSession(1418917147)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind => [24A293DC-68A8-435E-AD0B-7A416335F0DB]
+[EL Fine]: sql: 2016-01-07 10:55:59.412--ClientSession(1418917147)--Connection(321035985)--Thread(Thread[Test worker,5,main])--UPDATE ast_Material_M SET materialdesc = ?, updatedBy = ?, versionId = ? WHERE ((materialcode = ?) AND (versionId = ?))
+	bind => [yirVjWcZ849f2UvOSVke067wBXkTNOhQcnUQZNFJzDHXJDcnrc, AAAAA, 2, 24A293DC-68A8-435E-AD0B-7A416335F0DB, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.477--ClientSession(610494953)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (materialcode = ?))
+	bind => [1, 24A293DC-68A8-435E-AD0B-7A416335F0DB]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.484--ClientSession(1930539928)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE ((activeStatus = ?) AND (brandcode = ?))
+	bind => [1, 045A67C4-9204-42A7-B6D2-63C466FD52AE]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.494--ClientSession(975518563)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT materialcode, brandcode, materialdesc, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Material_M WHERE (materialcode = ?)
+	bind => [24A293DC-68A8-435E-AD0B-7A416335F0DB]
+[EL Fine]: sql: 2016-01-07 10:55:59.496--ClientSession(975518563)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Material_M WHERE ((materialcode = ?) AND (versionId = ?))
+	bind => [24A293DC-68A8-435E-AD0B-7A416335F0DB, 2]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.544--ClientSession(735153356)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT brandcode, branddesc, categoryId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Brand_M WHERE (brandcode = ?)
+	bind => [045A67C4-9204-42A7-B6D2-63C466FD52AE]
+[EL Fine]: sql: 2016-01-07 10:55:59.546--ClientSession(735153356)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Brand_M WHERE ((brandcode = ?) AND (versionId = ?))
+	bind => [045A67C4-9204-42A7-B6D2-63C466FD52AE, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:55:59.633--ClientSession(187048957)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT categoryId, category, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_Category_M WHERE (categoryId = ?)
+	bind => [72C4370B-72E2-41BF-A6D0-9D7FAC809A2A]
+[EL Fine]: sql: 2016-01-07 10:55:59.634--ClientSession(187048957)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_Category_M WHERE ((categoryId = ?) AND (versionId = ?))
+	bind => [72C4370B-72E2-41BF-A6D0-9D7FAC809A2A, 1]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

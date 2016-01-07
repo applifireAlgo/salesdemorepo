@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class com.app.server.service.UserAccessTestCase</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class com.app.server.service.UserAccessTestCase</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/com.app.server.service.html">com.app.server.service</a> &gt; UserAccessTestCase</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">6</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">1.535s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">test1Save</td>
+<td>0.462s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test2Update</td>
+<td>0.065s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3FindById</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByregion</td>
+<td>0.005s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test3findByuserId</td>
+<td>0.004s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">test4Delete</td>
+<td>0.995s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.087--ClientSession(1182590131)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_SalesRegion_M (regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0E98E8E6-054B-4ED0-A667-4E94A55A8619, hDZsEuK7ytBfq3I9mBFs4HVAu1gvjX7H2WgXQZVzzUxOpbX3Pz, 1, AAAAA, 2016-01-07 16:26:24.085, null, 2016-01-07 16:26:24.085, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.199--ClientSession(1215794338)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessDomain_M (userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [FB1AE981-EA36-432F-90F2-6C441E51B565, qYcklHRHGV3JaagBo7RM5evNuVZVsd74UBcNlwXDMCKm44yGxa, elEfNUkiYalcZGcQ6E5Uf93I5Cdiz0yEc9Axhg8zdQFi3WtxYP, 80EHNjmR2coaeHtOkpDCW3KMVXdQdAQk9bfztgHHEUd4jjVP0J, 2SlhvwlGZfL7gSAYm7rrTL1N6rFSD0A01oRn5WfzwD7XXDzBw9, 85983, 1, AAAAA, 2016-01-07 16:26:24.194, null, 2016-01-07 16:26:24.194, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.305--ClientSession(85691546)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccessLevel_M (userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [3F81A639-2671-4C63-AB7A-049833B88F52, 4aoC6I11nZQNYZggozMhftdEE82vM1CfT2OgCb4NiSzMQGiXvo, djGgkQh7vxHvsVRxQHVuvy9DVMSAK2IsMsiVZdxpgdNEZwlXaf, Ph58dWTDW2aS47ZW03gVeumrJzpG80iOOnVXrBFptNCvV3pKcY, fMNSaWnIMjh6MpQ3fZwwTLWoNg6Y5AfhIUbQOuwaXszTkz7VPy, 4092, 1, AAAAA, 2016-01-07 16:26:24.302, null, 2016-01-07 16:26:24.302, 1, null]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.37--ClientSession(243306739)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_User_T (userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [92DDA23C-2282-4ACC-8396-3EEE4F84DC4C, 1, 0, 0, 1, 1, 1970-01-02 15:47:36.789, 1, Aa0Z6QlRaMdohHcEFDRIfqrgv3e0kxD6g8fxPQuHaBo2t9uSf2, 1970-01-02 15:47:36.789, 1203, 10, FB1AE981-EA36-432F-90F2-6C441E51B565, 3F81A639-2671-4C63-AB7A-049833B88F52, 1, AAAAA, 2016-01-07 16:26:24.194, null, 2016-01-07 16:26:24.194, 1, null]
+Setting logged in user info for ADD
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.422--ClientSession(2021876462)--Connection(321035985)--Thread(Thread[Test worker,5,main])--INSERT INTO ast_UserAccess_M (region, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
+	bind =&gt; [0E98E8E6-054B-4ED0-A667-4E94A55A8619, 92DDA23C-2282-4ACC-8396-3EEE4F84DC4C, 1, AAAAA, 2016-01-07 16:26:24.402, null, 2016-01-07 16:26:24.402, 1, null]
+[EL Fine]: sql: 2016-01-07 10:56:24.423--ClientSession(2021876462)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT LAST_INSERT_ID()
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.543--ClientSession(909962967)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessId, region, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccess_M WHERE ((activeStatus = ?) AND (userAccessId = ?))
+	bind =&gt; [1, 11]
+Setting logged in user info for UPDATE
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.546--ClientSession(98327553)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessId, region, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccess_M WHERE (userAccessId = ?)
+	bind =&gt; [11]
+[EL Fine]: sql: 2016-01-07 10:56:24.547--ClientSession(98327553)--Connection(321035985)--Thread(Thread[Test worker,5,main])--UPDATE ast_UserAccess_M SET updatedBy = ?, versionId = ? WHERE ((userAccessId = ?) AND (versionId = ?))
+	bind =&gt; [AAAAA, 2, 11, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.606--ClientSession(1547544186)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessId, region, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccess_M WHERE ((activeStatus = ?) AND (userAccessId = ?))
+	bind =&gt; [1, 11]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.61--ClientSession(736338661)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessId, region, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccess_M WHERE ((activeStatus = ?) AND (region = ?))
+	bind =&gt; [1, 0E98E8E6-054B-4ED0-A667-4E94A55A8619]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.615--ClientSession(1205753665)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessId, region, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccess_M WHERE ((activeStatus = ?) AND (userId = ?))
+	bind =&gt; [1, 92DDA23C-2282-4ACC-8396-3EEE4F84DC4C]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.62--ClientSession(1208986563)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessId, region, userId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccess_M WHERE (userAccessId = ?)
+	bind =&gt; [11]
+[EL Fine]: sql: 2016-01-07 10:56:24.621--ClientSession(1208986563)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccess_M WHERE ((userAccessId = ?) AND (versionId = ?))
+	bind =&gt; [11, 2]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.695--ClientSession(176634247)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userId, allowMultipleLogin, changePasswordNextLogin, genTempOneTimePassword, isDeleted, isLocked, lastPasswordChangeDate, multiFactorAuthEnabled, passwordAlgo, passwordExpiryDate, sessionTimeout, userAccessCode, userAccessDomainId, userAccessLevelId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_User_T WHERE (userId = ?)
+	bind =&gt; [92DDA23C-2282-4ACC-8396-3EEE4F84DC4C]
+[EL Fine]: sql: 2016-01-07 10:56:24.695--ClientSession(176634247)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT passRecoveryId, answer, questionId, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_PassRecovery_TP WHERE (userId = ?)
+	bind =&gt; [92DDA23C-2282-4ACC-8396-3EEE4F84DC4C]
+[EL Fine]: sql: 2016-01-07 10:56:24.696--ClientSession(176634247)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userDataId, last5Passwords, oneTimePassword, oneTimePasswordExpiry, oneTimePasswordGenDate, password, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode, userId FROM ast_UserData_TP WHERE (userId = ?)
+	bind =&gt; [92DDA23C-2282-4ACC-8396-3EEE4F84DC4C]
+[EL Fine]: sql: 2016-01-07 10:56:24.697--ClientSession(176634247)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_User_T WHERE ((userId = ?) AND (versionId = ?))
+	bind =&gt; [92DDA23C-2282-4ACC-8396-3EEE4F84DC4C, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.805--ClientSession(1394744504)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessLevelId, levelDescription, levelHelp, levelIcon, levelName, userAccessLevel, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessLevel_M WHERE (userAccessLevelId = ?)
+	bind =&gt; [3F81A639-2671-4C63-AB7A-049833B88F52]
+[EL Fine]: sql: 2016-01-07 10:56:24.806--ClientSession(1394744504)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessLevel_M WHERE ((userAccessLevelId = ?) AND (versionId = ?))
+	bind =&gt; [3F81A639-2671-4C63-AB7A-049833B88F52, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:24.838--ClientSession(492630050)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT userAccessDomainId, domainDescription, domainHelp, domainIcon, domainName, userAccessDomain, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_UserAccessDomain_M WHERE (userAccessDomainId = ?)
+	bind =&gt; [FB1AE981-EA36-432F-90F2-6C441E51B565]
+[EL Fine]: sql: 2016-01-07 10:56:24.839--ClientSession(492630050)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_UserAccessDomain_M WHERE ((userAccessDomainId = ?) AND (versionId = ?))
+	bind =&gt; [FB1AE981-EA36-432F-90F2-6C441E51B565, 1]
+In around repository aspect
+[EL Fine]: sql: 2016-01-07 10:56:25.463--ClientSession(735846139)--Connection(321035985)--Thread(Thread[Test worker,5,main])--SELECT regioncode, regionname, versionId, createdBy, createdDate, updatedBy, updatedDate, activeStatus, txnAccessCode FROM ast_SalesRegion_M WHERE (regioncode = ?)
+	bind =&gt; [0E98E8E6-054B-4ED0-A667-4E94A55A8619]
+[EL Fine]: sql: 2016-01-07 10:56:25.464--ClientSession(735846139)--Connection(321035985)--Thread(Thread[Test worker,5,main])--DELETE FROM ast_SalesRegion_M WHERE ((regioncode = ?) AND (versionId = ?))
+	bind =&gt; [0E98E8E6-054B-4ED0-A667-4E94A55A8619, 1]
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 2.3</a> at Jan 7, 2016 10:56:28 AM</p>
+</div>
+</div>
+</body>
+</html>
